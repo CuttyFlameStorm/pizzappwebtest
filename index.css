@@ -1,0 +1,199 @@
+/* index.css */
+
+:root {
+  --glass-bg: rgba(255, 255, 255, 0.1);
+  --glass-border: rgba(255, 255, 255, 0.2);
+  --text-color: #fff;
+  --accent: #ff6f00;
+  --card-bg: rgba(0, 0, 0, 0.4);
+  --input-bg: rgba(255, 255, 255, 0.15);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #1e1e2f, #2c2c3c);
+  color: var(--text-color);
+  min-height: 100vh;
+}
+
+nav {
+  background-color: var(--glass-bg);
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+nav h1 {
+  font-size: 1.6rem;
+  color: var(--accent);
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 1rem;
+}
+
+nav ul li a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  text-align: center;
+  padding: 3rem 1rem;
+  background: var(--glass-bg);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid var(--glass-border);
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.hero p {
+  font-size: 1.1rem;
+}
+
+main {
+  padding: 2rem;
+}
+
+.filtres {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.filtres label {
+  font-weight: bold;
+}
+
+select {
+  padding: 0.5rem;
+  border-radius: 8px;
+  border: 1px solid var(--glass-border);
+  background-color: var(--input-bg);
+  color: var(--text-color);
+}
+
+select option {
+  background-color: #2c2c3c;
+  color: #fff;
+}
+
+#titreCategorie {
+  text-align: center;
+  font-size: 1.4rem;
+  margin: 2rem 0 1rem;
+  color: var(--accent);
+}
+
+.pizzas-container {
+  display: grid;
+  gap: 2rem;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+}
+
+.pizzas-container .pizza-card {
+  background: var(--card-bg);
+  border-radius: 12px;
+  padding: 1rem;
+  text-align: center;
+  backdrop-filter: blur(6px);
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+}
+
+.pizza-card img {
+  max-width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 1rem;
+}
+
+.pizza-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+.pizza-card p {
+  font-size: 0.9rem;
+  margin-bottom: 0.5rem;
+}
+
+.pizza-card .prix {
+  font-weight: bold;
+  color: var(--accent);
+  margin-bottom: 0.5rem;
+}
+
+.pizza-card .quantite-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+.pizza-card button {
+  padding: 0.4rem 0.8rem;
+  background-color: var(--accent);
+  border: none;
+  border-radius: 6px;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.pizza-card span {
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.commande-global {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+#btnCommander {
+  padding: 1rem 2rem;
+  background-color: var(--accent);
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  font-weight: bold;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4);
+  transition: background 0.3s ease;
+}
+
+#btnCommander:hover {
+  background-color: #e65c00;
+}
+
+
+@media screen and (max-width: 400px) {
+  nav h1 {
+    font-size: 1rem;         /* réduit la taille du titre */
+    max-width: 140px;        /* limite la largeur */
+    white-space: nowrap;     /* empêche le retour à la ligne */
+    overflow: hidden;        /* cache le dépassement */
+    text-overflow: ellipsis; /* ajoute des ... si trop long */
+  }
+}

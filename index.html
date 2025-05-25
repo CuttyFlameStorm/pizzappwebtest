@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accueil - Pizz’Art by Sidath</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <nav>
+    <h1>Pizz’Art by Sidath</h1>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="panier.html">Panier</a></li>
+      <li><a href="connexion.html">Connexion</a></li>
+    </ul>
+  </nav>
+
+  <header class="hero">
+    <h2>Bienvenue chez Pizz’Art by Sidath</h2>
+    <p>Des pizzas artisanales préparées avec passion</p>
+  </header>
+
+  <main>
+    <section class="filtres">
+      <label for="filtreCategorie">Filtrer par catégorie :</label>
+      <select id="filtreCategorie">
+        <option value="">Toutes</option>
+        <!-- Catégories injectées dynamiquement -->
+      </select>
+    </section>
+
+    <section id="titreCategorie"></section>
+
+    <section id="listePizzas" class="pizzas-container">
+      <!-- Pizzas affichées dynamiquement -->
+    </section>
+
+    <div class="commande-global">
+      <button id="btnCommander">Commander</button>
+    </div>
+  </main>
+
+  <script src="index.js"></script>
+</body>
+</html>

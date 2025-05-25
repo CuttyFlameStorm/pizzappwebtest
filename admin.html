@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin - Pizz’Art by Sidath</title>
+  <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+  <nav>
+    <h1>ADMIN</h1>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="#" id="logoutBtn">Déconnexion</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="categorie-section">
+      <h2>Gérer les catégories</h2>
+      <div class="form-block">
+        <input type="text" id="categorieInput" placeholder="Nom de la catégorie">
+        <button id="addCategorieBtn">Ajouter Catégorie</button>
+      </div>
+      <ul id="categorieList"></ul>
+    </section>
+
+    <section id="pizza-section">
+      <h2>Ajouter une pizza</h2>
+      <div class="form-block">
+        <input type="text" id="pizzaName" placeholder="Nom de la pizza">
+        <select id="pizzaCategorie"></select>
+        <textarea id="pizzaIngredients" placeholder="Ingrédients (séparés par des virgules)"></textarea>
+        <input type="number" id="pizzaPrice" placeholder="Prix €" min="0" step="0.1">
+        <input type="text" id="pizzaImage" placeholder="Nom de l'image (ex: canibale.png)">
+        <button id="addPizzaBtn">Ajouter Pizza</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="admin.js"></script>
+</body>
+</html>

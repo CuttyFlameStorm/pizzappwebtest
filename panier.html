@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Panier - Pizz’Art by Sidath</title>
+  <link rel="stylesheet" href="panier.css">
+</head>
+<body>
+  <nav>
+    <h1>Pizz’Art by Sidath</h1>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="connexion.html">Connexion</a></li>
+    </ul>
+  </nav>
+
+  <main class="panier-container">
+    <h2>Votre panier</h2>
+    <section id="contenuPanier" class="liste-pizzas-panier">
+      <!-- Pizzas du panier insérées dynamiquement -->
+    </section>
+
+    <div class="action-panier">
+      <button id="btnPaiement">Procéder au paiement</button>
+    </div>
+  </main>
+
+  <!-- Modal de paiement -->
+  <div id="modalPaiement" class="modal hidden">
+    <div class="modal-content">
+      <h3>Paiement</h3>
+      <p>Veuillez saisir vos informations bancaires :</p>
+      <input type="text" placeholder="Numéro de carte">
+      <input type="text" placeholder="Date d'expiration">
+      <input type="text" placeholder="Cryptogramme">
+      <button id="validerPaiement">Valider le paiement</button>
+    </div>
+  </div>
+
+  <script src="panier.js"></script>
+</body>
+</html>

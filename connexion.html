@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Connexion - Pizz’Art by Sidath</title>
+  <link rel="stylesheet" href="connexion.css">
+</head>
+<body>
+  <nav>
+    <h1>Pizz’Art by Sidath</h1>
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="panier.html">Panier</a></li>
+    </ul>
+  </nav>
+
+  <main class="connexion-container">
+    <section class="formulaire-connexion">
+      <h2>Connexion administrateur</h2>
+      <form id="loginForm">
+        <div class="form-field">
+          <label for="identifiant">Identifiant :</label>
+          <input type="text" id="identifiant" required placeholder="admin">
+        </div>
+        <div class="form-field">
+          <label for="motdepasse">Mot de passe :</label>
+          <input type="password" id="motdepasse" required placeholder="********">
+        </div>
+        <button type="submit">Se connecter</button>
+      </form>
+    </section>
+  </main>
+
+  <script src="connexion.js"></script>
+</body>
+</html>
